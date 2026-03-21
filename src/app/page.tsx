@@ -41,7 +41,7 @@ export default function Home() {
 
               {/* Heading */}
               <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-slate-900 leading-[1.08] tracking-tight text-balance">
-                Saçlarınıza{" "}
+                Güzelliğinize{" "}
                 <span className="text-indigo-600">Değer Verin,</span>
                 <br />
                 Farkı Hissedin
@@ -49,7 +49,7 @@ export default function Home() {
 
               {/* Subtitle */}
               <p className="text-lg sm:text-xl text-slate-500 leading-relaxed max-w-md">
-                Doğal içerikler ve ileri teknoloji formülüyle hazırlanan FiONCÉ saç bakım ürünleriyle saçlarınıza sağlık ve parlaklık katın.
+                Doğal içerikler ve ileri teknoloji formülleriyle hazırlanan FiONCÉ saç, cilt ve vücut bakım ürünleriyle kendinizi en iyi hissedin.
               </p>
 
               {/* CTAs */}
@@ -73,7 +73,7 @@ export default function Home() {
               <div className="flex items-center gap-2 text-sm text-slate-500">
                 <CheckCircle className="w-4 h-4 text-indigo-500 flex-shrink-0" />
                 <span>
-                  <strong className="text-slate-700 font-semibold">2 Varyant</strong>
+                  <strong className="text-slate-700 font-semibold">7 Ürün</strong>
                   {" · "}
                   <strong className="text-slate-700 font-semibold">Made in Türkiye</strong>
                   {" · "}
@@ -151,10 +151,10 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 divide-y md:divide-y-0 divide-x-0 md:divide-x divide-slate-200">
             {[
-              { value: "1", label: "Ürün" },
-              { value: "250ml", label: "Hacim" },
+              { value: "7", label: "Ürün" },
+              { value: "3", label: "Kategori" },
               { value: "%100", label: "Doğal" },
-              { value: "Ücretsiz", label: "İnceleme" },
+              { value: "Türkiye", label: "Made in" },
             ].map((stat) => (
               <div
                 key={stat.label}
@@ -179,7 +179,7 @@ export default function Home() {
                 Ürünlerimiz
               </h2>
               <p className="text-slate-500 text-lg">
-                Her saç tipine özel geliştirilen FiONCÉ bakım serisi
+                Saç, cilt ve vücut için geliştirilen FiONCÉ beauty &amp; healthy serisi
               </p>
             </div>
             <Link
@@ -190,7 +190,7 @@ export default function Home() {
             </Link>
           </div>
 
-          <div className="grid grid-cols-1 gap-6 max-w-sm mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {featured.map((product, index) => (
               <ProductCard key={product.id} product={product} index={index} />
             ))}
@@ -270,7 +270,7 @@ export default function Home() {
           </h2>
 
           <p className="text-indigo-200 text-lg mb-10 max-w-xl mx-auto leading-relaxed">
-            Dökülme karşıtı ve kepek karşıtı formüllerimizle saçlarınıza ihtiyaç duydukları bakımı verin.
+            Saç, cilt ve vücut bakımı için doğal içerikli ürünlerimizle kendinize en iyi bakımı verin.
           </p>
 
           <Link

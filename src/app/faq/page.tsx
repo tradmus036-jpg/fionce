@@ -24,6 +24,21 @@ const faqItems = [
       "Saç köklerinizi bol suyla iyice ıslatın, yeterli miktarda şampuanı saç diplerinize ve saça uygulayarak masaj yapın. 2-3 dakika bekledikten sonra bol suyla durulayın. Günlük kullanıma uygundur.",
   },
   {
+    question: "Arnica & Viola Cream ve Repair Cream nasıl kullanılır?",
+    answer:
+      "Yeterli miktarda kremi temiz cildinize dairesel hareketlerle hafifçe masaj yaparak uygulayın. Ürünü uyguladıktan sonra durulamayın. Serin ve kuru yerde muhafaza edin. 3 yaş altı çocukların kullanımı için uygun değildir.",
+  },
+  {
+    question: "Roll Fresh Massage Serum hangi bölgelerde kullanılır?",
+    answer:
+      "Roll Fresh, roll-on başlığı sayesinde doğrudan ihtiyaç duyulan bölgeye kolayca uygulanır. Boyun, omuz, sırt, bel, kol ve bacak gibi gerginlik hissedilen bölgelerde kullanılabilir. Gün içinde gerektiği kadar tekrarlanabilir. Kadın ve erkek kullanımına uygundur.",
+  },
+  {
+    question: "Ozone Oil Serum'lar nasıl kullanılır?",
+    answer:
+      "Ozone & Collagen ve Ozone & Licorice Oil Serum'ları temiz cilde 2–3 damla uygulayın. Nazik masaj hareketleriyle cilde yedirin. Sabah ve/veya akşam bakım rutininizde kullanılabilir. Hafif yapısı sayesinde yağlı his bırakmaz.",
+  },
+  {
     question: "Ürünler nerede üretiliyor?",
     answer:
       "FiONCÉ ürünleri, FARMAPLUS KOZMETİK İLAÇ SAN. VE TİC. LTD. ŞTİ. tarafından İstanbul Büyükçekmece'de üretilmektedir. Made in Türkiye kalitesiyle tüm standartlara uygun şekilde üretilmektedir.",

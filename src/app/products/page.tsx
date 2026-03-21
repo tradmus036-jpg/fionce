@@ -6,7 +6,7 @@ import Badge from "@/components/ui/Badge";
 
 export const metadata: Metadata = {
   title: "Tüm Ürünler",
-  description: "FiONCÉ saç bakım ürünlerini keşfedin. Dökülme karşıtı ve kepek karşıtı şampuanlar.",
+  description: "FiONCÉ beauty & healthy ürünlerini keşfedin. Saç bakımı, cilt bakımı ve vücut bakımı için doğal içerikli ürünler.",
 };
 
 export default function ProductsPage() {
