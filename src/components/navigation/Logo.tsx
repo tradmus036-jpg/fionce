@@ -32,13 +32,16 @@ export default function Logo({
       </svg>
 
       {showWordmark && (
-        <span
-          className={wordmarkClass}
-          style={{
-            fontFamily: "var(--font-playfair, 'Playfair Display', Georgia, serif)",
-          }}
-        >
-          Fionce
+        <span className="flex flex-col leading-none">
+          <span
+            className={wordmarkClass}
+            style={{ fontFamily: "var(--font-playfair, 'Playfair Display', Georgia, serif)", letterSpacing: "0.02em" }}
+          >
+            Fi<span style={{ fontWeight: 800 }}>ONCÉ</span>
+          </span>
+          <span className="text-[10px] font-light tracking-widest text-slate-400 uppercase mt-0.5">
+            beauty &amp; healthy
+          </span>
         </span>
       )}
     </span>

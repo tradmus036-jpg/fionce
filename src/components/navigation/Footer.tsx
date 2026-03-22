@@ -27,8 +27,7 @@ export default function Footer() {
               <Logo iconSize={36} wordmarkClass="text-2xl font-bold text-white" />
             </Link>
             <p className="text-sm leading-relaxed max-w-xs text-slate-400">
-              En kaliteli ürünleri keşfedin. Uzman seçimi, dürüst incelemeler
-              ve kapsamlı teknik karşılaştırmalarla doğru ürünü bulun.
+              Saç, cilt ve vücut bakımı için doğal içerikli ürünler. FARMAPLUS KOZMETİK tarafından İstanbul'da üretilmektedir.
             </p>
 
             {/* Social icons */}
@@ -75,13 +74,13 @@ export default function Footer() {
             </h4>
             <ul className="space-y-3 text-sm">
               <li>
-                <span className="text-slate-400">Bağımsız ürün inceleme platformu</span>
+                <span className="text-slate-400">FiONCÉ beauty &amp; healthy</span>
               </li>
               <li>
-                <span className="text-slate-400">Sponsorsuz içerik</span>
+                <span className="text-slate-400">Made in Türkiye</span>
               </li>
               <li>
-                <span className="text-slate-400">Uzman editör kadrosu</span>
+                <span className="text-slate-400">info@farmapluskozmetik.com</span>
               </li>
             </ul>
           </div>
@@ -94,7 +93,7 @@ export default function Footer() {
       {/* Lower copyright bar */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5">
         <div className="flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-500">
-          <p>© {new Date().getFullYear()} Fionce. Tüm hakları saklıdır.</p>
+          <p>© {new Date().getFullYear()} FiONCÉ beauty &amp; healthy. Tüm hakları saklıdır.</p>
           <p className="text-slate-600">
             Tasarım &amp; Geliştirme ile yapılmıştır.
           </p>

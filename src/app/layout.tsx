@@ -18,12 +18,12 @@ const playfair = Playfair_Display({
 
 export const metadata: Metadata = {
   title: {
-    default: "Fionce — Premium Ürün Vitrini",
-    template: "%s | Fionce",
+    default: "FiONCÉ beauty & healthy",
+    template: "%s | FiONCÉ",
   },
   description:
-    "En kaliteli ürünleri keşfedin. Uzman seçimi, dürüst incelemeler ve kapsamlı teknik karşılaştırmalarla doğru ürünü bulun.",
-  metadataBase: new URL("https://vitrin.vercel.app"),
+    "FiONCÉ beauty & healthy — Saç, cilt ve vücut bakımı için doğal içerikli ürünler. Made in Türkiye.",
+  metadataBase: new URL("https://fionce.vercel.app"),
 };
 
 export default function RootLayout({
