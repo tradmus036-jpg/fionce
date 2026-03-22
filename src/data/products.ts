@@ -10,6 +10,7 @@ export const products: Product[] = [
     longDesc:
       "Saç derisi yüzeyinde bulunan mikropların ve yığılan kirlerin uzaklaştırılması, saç köklerinin güçlendirilmesi için özel formüle edilmiştir. İçeriğindeki aktif oksijen ile saç ve saç derisinin nefes almasını sağlar, besler ve nemlendirir. Böylelikle saç telleri ve kökleri güçlenir, dökülmelere karşı direnç kazanır ve yeni saç oluşumunu destekler. Saç için gerekli vitaminleri ve mineralleri yeterli miktarda sağladığından saç köklerini güçlendirir; uzama ve onarımı gözle görülür şekilde farkettir. Saçlarınıza parlak ve ipeksi bir yumuşaklık verir, hacim kazandırır.",
     images: [
+      "/images/products/dokulum-karsiti-main.png",
       "/images/products/dokulum-karsiti-1.jpg",
       "/images/products/dokulum-karsiti-2.jpg",
     ],
@@ -33,6 +34,7 @@ export const products: Product[] = [
     longDesc:
       "Ardıç katranı, saç derisinin temizlenmesine ve kepek oluşumunu engellemeye yardımcı olan doğal bir içeriktir. Collagen saç tellerini güçlendirir ve saçların elastikiyetini artırır; böylece kırılma ve dökülme riskini azaltır. Trichogen ve Ozon kombinasyonu saç köklerini besleyerek saç derisinde sağlıklı bir ortam oluşturur. Salicylic Acid, saç derisini ölü hücrelerden arındırır ve kepek oluşumunu önler. Panthenol saç tellerini nemlendirir, saçların yumuşak ve parlak olmasını sağlar. Çay ağacı yağı saç derisindeki mikropları temizler; Ginseng ve Biotin saç köklerini canlandırır. Saçlarınıza sağlık ve ışıltı katın.",
     images: [
+      "/images/products/kepekli-saclar-main.png",
       "/images/products/kepekli-saclar-1.jpg",
       "/images/products/kepekli-saclar-2.jpg",
     ],
