@@ -24,6 +24,7 @@ export const products: Product[] = [
     ],
     externalLink: "https://www.farmapluskozmetik.com",
     isFeatured: true,
+    isArchived: true,
   },
   {
     id: "2",
@@ -165,12 +166,14 @@ export const products: Product[] = [
   },
 ];
 
+export const activeProducts = products.filter((p) => !p.isArchived);
+
 export function getProductBySlug(slug: string): Product | undefined {
   return products.find((p) => p.slug === slug);
 }
 
 export function getFeaturedProducts(): Product[] {
-  return products.filter((p) => p.isFeatured);
+  return products.filter((p) => p.isFeatured && !p.isArchived);
 }
 
 export function getRelatedProducts(currentSlug: string, category: string, limit = 4): Product[] {
@@ -189,4 +192,4 @@ export function getProductsByCategory(category: string): Product[] {
   return products.filter((p) => p.category === category);
 }
 
-export const categories = [...new Set(products.map((p) => p.category))];
+export const categories = [...new Set(activeProducts.map((p) => p.category))];

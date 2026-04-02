@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { products, categories } from "@/data/products";
+import { activeProducts as products, categories } from "@/data/products";
 import ProductCard from "@/components/product/ProductCard";
 import Breadcrumbs from "@/components/navigation/Breadcrumbs";
 import Badge from "@/components/ui/Badge";

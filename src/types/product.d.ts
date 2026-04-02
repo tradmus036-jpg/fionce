@@ -15,4 +15,5 @@ export interface Product {
   specs: ProductSpec[];
   externalLink: string;
   isFeatured: boolean;
+  isArchived?: boolean;
 }
