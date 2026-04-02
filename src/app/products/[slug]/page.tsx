@@ -88,7 +88,7 @@ export default async function ProductDetailPage({ params }: PageProps) {
                       alt="Hepsiburada"
                       width={140}
                       height={30}
-                      className="h-6 w-auto"
+                      className="h-9 w-auto"
                     />
                   </a>
                 )}
@@ -104,7 +104,7 @@ export default async function ProductDetailPage({ params }: PageProps) {
                       alt="Trendyol"
                       width={120}
                       height={30}
-                      className="h-6 w-auto"
+                      className="h-9 w-auto"
                     />
                   </a>
                 )}
