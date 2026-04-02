@@ -1,11 +1,10 @@
 import Link from "next/link";
 import { ArrowRight, Zap, Shield, Leaf, Sparkles } from "lucide-react";
-import { getFeaturedProducts, activeProducts } from "@/data/products";
+import { activeProducts } from "@/data/products";
 import ProductCard from "@/components/product/ProductCard";
 import HeroSlider from "@/components/home/HeroSlider";
 
 export default function Home() {
-  const featured = getFeaturedProducts();
 
   return (
     <div>
@@ -57,7 +56,7 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {featured.map((product, index) => (
+            {activeProducts.map((product, index) => (
               <ProductCard key={product.id} product={product} index={index} />
             ))}
           </div>
