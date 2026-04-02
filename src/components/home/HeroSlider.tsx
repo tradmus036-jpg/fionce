@@ -11,32 +11,14 @@ interface HeroSliderProps {
   slides: Product[];
 }
 
-const variants = {
-  enter: (dir: number) => ({
-    x: dir > 0 ? "100%" : "-100%",
-    opacity: 0,
-  }),
-  center: {
-    x: 0,
-    opacity: 1,
-  },
-  exit: (dir: number) => ({
-    x: dir > 0 ? "-100%" : "100%",
-    opacity: 0,
-  }),
-};
-
 export default function HeroSlider({ slides }: HeroSliderProps) {
   const [current, setCurrent] = useState(0);
   const [direction, setDirection] = useState(1);
 
-  const goTo = useCallback(
-    (index: number, dir: number) => {
-      setDirection(dir);
-      setCurrent(index);
-    },
-    []
-  );
+  const goTo = useCallback((index: number, dir: number) => {
+    setDirection(dir);
+    setCurrent(index);
+  }, []);
 
   const next = useCallback(() => {
     goTo((current + 1) % slides.length, 1);
@@ -56,14 +38,12 @@ export default function HeroSlider({ slides }: HeroSliderProps) {
 
   return (
     <section className="relative w-full h-[88vh] min-h-[540px] overflow-hidden bg-slate-900">
-      <AnimatePresence custom={direction} initial={false}>
+      <AnimatePresence initial={false}>
         <motion.div
           key={slide.slug}
-          custom={direction}
-          variants={variants}
-          initial="enter"
-          animate="center"
-          exit="exit"
+          initial={{ x: direction > 0 ? "100%" : "-100%", opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          exit={{ x: direction > 0 ? "-100%" : "100%", opacity: 0 }}
           transition={{ duration: 0.65, type: "tween" }}
           className="absolute inset-0"
         >
@@ -87,7 +67,7 @@ export default function HeroSlider({ slides }: HeroSliderProps) {
               <motion.div
                 initial={{ opacity: 0, y: 28 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.25, duration: 0.55, ease: "easeOut" }}
+                transition={{ delay: 0.25, duration: 0.55, type: "tween" }}
                 className="max-w-2xl space-y-5"
               >
                 <span className="inline-block text-xs uppercase tracking-[0.18em] text-white/60 font-medium">
