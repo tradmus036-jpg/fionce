@@ -18,10 +18,10 @@ const navLinks: NavItem[] = [
     href: "/products",
     label: "Ürünler",
     dropdown: [
-      { href: "/products", label: "Tüm Ürünler", desc: "Tüm ürün kataloğunu gör" },
-      { href: "/products?kategori=Saç Bakımı", label: "Saç Bakımı", desc: "Şampuan ve saç serileri" },
-      { href: "/products?kategori=Cilt Bakımı", label: "Cilt Bakımı", desc: "Krem ve serum ürünleri" },
-      { href: "/products?kategori=Vücut Bakımı", label: "Vücut Bakımı", desc: "Masaj ve vücut serileri" },
+      { href: "/products", label: "Tüm Ürünler", desc: "Tüm Ürün Kataloğunu Gör" },
+      { href: "/products?kategori=Saç Bakımı", label: "Saç Bakımı", desc: "Şampuan ve Saç Serileri" },
+      { href: "/products?kategori=Cilt Bakımı", label: "Cilt Bakımı", desc: "Krem ve Serum Ürünleri" },
+      { href: "/products?kategori=Vücut Bakımı", label: "Vücut Bakımı", desc: "Masaj ve Vücut Serileri" },
     ],
   },
   {
