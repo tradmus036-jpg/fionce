@@ -19,12 +19,10 @@ const variants = {
   center: {
     x: 0,
     opacity: 1,
-    transition: { duration: 0.65, ease: "easeInOut" },
   },
   exit: (dir: number) => ({
     x: dir > 0 ? "-100%" : "100%",
     opacity: 0,
-    transition: { duration: 0.65, ease: "easeInOut" },
   }),
 };
 
@@ -66,6 +64,7 @@ export default function HeroSlider({ slides }: HeroSliderProps) {
           initial="enter"
           animate="center"
           exit="exit"
+          transition={{ duration: 0.65, type: "tween" }}
           className="absolute inset-0"
         >
           {/* Background image */}
