@@ -14,6 +14,8 @@ export interface Product {
   images: string[];
   specs: ProductSpec[];
   externalLink: string;
+  hepsiburadaLink?: string;
+  trendyolLink?: string;
   isFeatured: boolean;
   isArchived?: boolean;
 }

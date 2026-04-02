@@ -23,6 +23,8 @@ export const products: Product[] = [
       { label: "SKT", value: "04.2028 (ÜRT: 04.2025)" },
     ],
     externalLink: "https://www.farmapluskozmetik.com",
+    hepsiburadaLink: "https://www.hepsiburada.com",
+    trendyolLink: "https://www.trendyol.com",
     isFeatured: true,
     isArchived: true,
   },
@@ -49,6 +51,8 @@ export const products: Product[] = [
       { label: "SKT", value: "04.2028 (ÜRT: 04.2025)" },
     ],
     externalLink: "https://www.farmapluskozmetik.com",
+    hepsiburadaLink: "https://www.hepsiburada.com",
+    trendyolLink: "https://www.trendyol.com",
     isFeatured: true,
   },
   {
@@ -72,6 +76,8 @@ export const products: Product[] = [
       { label: "Raf Ömrü", value: "12 ay (açıldıktan sonra)" },
     ],
     externalLink: "https://www.farmapluskozmetik.com",
+    hepsiburadaLink: "https://www.hepsiburada.com",
+    trendyolLink: "https://www.trendyol.com",
     isFeatured: true,
   },
   {
@@ -95,6 +101,8 @@ export const products: Product[] = [
       { label: "Raf Ömrü", value: "12 ay (açıldıktan sonra)" },
     ],
     externalLink: "https://www.farmapluskozmetik.com",
+    hepsiburadaLink: "https://www.hepsiburada.com",
+    trendyolLink: "https://www.trendyol.com",
     isFeatured: false,
   },
   {
@@ -118,6 +126,8 @@ export const products: Product[] = [
       { label: "Raf Ömrü", value: "12 ay (açıldıktan sonra)" },
     ],
     externalLink: "https://www.farmapluskozmetik.com",
+    hepsiburadaLink: "https://www.hepsiburada.com",
+    trendyolLink: "https://www.trendyol.com",
     isFeatured: false,
   },
   {
@@ -140,6 +150,8 @@ export const products: Product[] = [
       { label: "Üretim", value: "Made in Türkiye – FARMAPLUS KOZMETİK" },
     ],
     externalLink: "https://www.farmapluskozmetik.com",
+    hepsiburadaLink: "https://www.hepsiburada.com",
+    trendyolLink: "https://www.trendyol.com",
     isFeatured: false,
   },
   {
@@ -162,6 +174,8 @@ export const products: Product[] = [
       { label: "Üretim", value: "Made in Türkiye – FARMAPLUS KOZMETİK" },
     ],
     externalLink: "https://www.farmapluskozmetik.com",
+    hepsiburadaLink: "https://www.hepsiburada.com",
+    trendyolLink: "https://www.trendyol.com",
     isFeatured: false,
   },
 ];

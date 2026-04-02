@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { ExternalLink } from "lucide-react";
+import Image from "next/image";
 import { getProductBySlug, products } from "@/data/products";
 import ProductGallery from "@/components/product/ProductGallery";
 import Breadcrumbs from "@/components/navigation/Breadcrumbs";
@@ -72,17 +72,45 @@ export default async function ProductDetailPage({ params }: PageProps) {
           <p className="text-slate-600 leading-relaxed">{product.longDesc}</p>
 
           {/* CTA */}
-          <div className="flex flex-col sm:flex-row gap-3 pt-2">
-            <a
-              href={product.externalLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex-1 inline-flex items-center justify-center gap-2 bg-indigo-600 text-white px-6 py-3.5 rounded-xl font-semibold hover:bg-indigo-700 active:bg-indigo-800 transition-colors shadow-lg shadow-indigo-200"
-            >
-              <ExternalLink className="w-4 h-4" />
-              Satın Almak İçin Git
-            </a>
-          </div>
+          {(product.hepsiburadaLink || product.trendyolLink) && (
+            <div className="flex flex-col gap-3 pt-2">
+              <p className="text-sm font-medium text-slate-500">Satın almak için platform seçin:</p>
+              <div className="flex flex-col sm:flex-row gap-3">
+                {product.hepsiburadaLink && (
+                  <a
+                    href={product.hepsiburadaLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex-1 inline-flex items-center justify-center gap-3 bg-white border-2 border-[#FF6000] px-6 py-3 rounded-xl font-semibold hover:bg-orange-50 active:bg-orange-100 transition-colors shadow-sm"
+                  >
+                    <Image
+                      src="/images/brands/hepsiburada.svg"
+                      alt="Hepsiburada"
+                      width={140}
+                      height={30}
+                      className="h-6 w-auto"
+                    />
+                  </a>
+                )}
+                {product.trendyolLink && (
+                  <a
+                    href={product.trendyolLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex-1 inline-flex items-center justify-center gap-3 bg-white border-2 border-[#F27A1A] px-6 py-3 rounded-xl font-semibold hover:bg-orange-50 active:bg-orange-100 transition-colors shadow-sm"
+                  >
+                    <Image
+                      src="/images/brands/trendyol.svg"
+                      alt="Trendyol"
+                      width={120}
+                      height={30}
+                      className="h-6 w-auto"
+                    />
+                  </a>
+                )}
+              </div>
+            </div>
+          )}
 
           {/* Specs Table */}
           {product.specs.length > 0 && (
