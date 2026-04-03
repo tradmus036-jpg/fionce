@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Image from "next/image";
+import Link from "next/link";
 import { getProductBySlug, products } from "@/data/products";
 import ProductGallery from "@/components/product/ProductGallery";
 import Breadcrumbs from "@/components/navigation/Breadcrumbs";
@@ -61,11 +62,22 @@ export default async function ProductDetailPage({ params }: PageProps) {
           <div>
             <div className="flex items-center gap-2 mb-3">
               <Badge variant="slate">{product.category}</Badge>
-              {product.isFeatured && <Badge variant="indigo">Öne Çıkan</Badge>}
+              {product.isBundle && <Badge variant="violet">Fırsat Seti</Badge>}
+              {product.isFeatured && !product.isBundle && <Badge variant="indigo">Öne Çıkan</Badge>}
+              {product.discountPercent && (
+                <span className="inline-flex items-center bg-rose-500 text-white text-xs font-bold px-2.5 py-1 rounded-full">
+                  %{product.discountPercent} İndirim
+                </span>
+              )}
             </div>
             <h1 className="text-3xl font-bold text-slate-900 leading-tight">{product.name}</h1>
             {product.price && (
-              <p className="text-3xl font-bold text-indigo-600 mt-3">{product.price}</p>
+              <div className="flex items-baseline gap-3 mt-3">
+                <p className="text-3xl font-bold text-indigo-600">{product.price}</p>
+                {product.originalPrice && (
+                  <p className="text-xl text-slate-400 line-through">{product.originalPrice}</p>
+                )}
+              </div>
             )}
           </div>
 
@@ -108,6 +120,44 @@ export default async function ProductDetailPage({ params }: PageProps) {
                     />
                   </a>
                 )}
+              </div>
+            </div>
+          )}
+
+          {/* Bundle Contents */}
+          {product.isBundle && product.bundleItems && product.bundleItems.length > 0 && (
+            <div className="border border-violet-200 rounded-2xl overflow-hidden bg-violet-50/40">
+              <div className="px-5 py-3 border-b border-violet-200 bg-violet-50">
+                <h2 className="font-semibold text-violet-800 text-sm">Bu Setin İçeriği</h2>
+              </div>
+              <div className="divide-y divide-violet-100">
+                {product.bundleItems.map((itemId) => {
+                  const item = products.find((p) => p.id === itemId);
+                  if (!item) return null;
+                  return (
+                    <Link
+                      key={itemId}
+                      href={`/products/${item.slug}`}
+                      className="flex items-center gap-4 px-5 py-3 hover:bg-violet-50 transition-colors group"
+                    >
+                      <div className="relative w-14 h-14 rounded-xl overflow-hidden bg-white border border-violet-100 flex-shrink-0">
+                        <Image
+                          src={item.images[0]}
+                          alt={item.name}
+                          fill
+                          className="object-cover"
+                          sizes="56px"
+                        />
+                      </div>
+                      <div className="flex-1 min-w-0">
+                        <p className="text-sm font-medium text-slate-800 group-hover:text-violet-700 transition-colors leading-snug line-clamp-1">
+                          {item.name}
+                        </p>
+                        <p className="text-xs text-slate-400 mt-0.5">{item.shortDesc.split(".")[0]}</p>
+                      </div>
+                    </Link>
+                  );
+                })}
               </div>
             </div>
           )}

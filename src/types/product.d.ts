@@ -11,6 +11,8 @@ export interface Product {
   shortDesc: string;
   longDesc: string;
   price?: string;
+  originalPrice?: string;
+  discountPercent?: number;
   images: string[];
   specs: ProductSpec[];
   externalLink: string;
@@ -18,4 +20,6 @@ export interface Product {
   trendyolLink?: string;
   isFeatured: boolean;
   isArchived?: boolean;
+  isBundle?: boolean;
+  bundleItems?: string[];
 }

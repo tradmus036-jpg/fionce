@@ -34,16 +34,24 @@ export default function ProductCard({ product, index = 0 }: ProductCardProps) {
             sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
           />
 
-          {/* isFeatured ribbon */}
-          {product.isFeatured && (
-            <div className="absolute top-0 left-0">
-              <div className="relative">
-                <span className="absolute top-3 -left-0 inline-flex items-center gap-1 bg-indigo-600 text-white text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-r-full shadow-md">
-                  Öne Çıkan
-                </span>
-              </div>
-            </div>
-          )}
+          {/* Bundle / Featured / Discount ribbons */}
+          <div className="absolute top-3 left-0 flex flex-col gap-1.5">
+            {product.isBundle && (
+              <span className="inline-flex items-center bg-violet-600 text-white text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-r-full shadow-md">
+                Fırsat Seti
+              </span>
+            )}
+            {product.isFeatured && !product.isBundle && (
+              <span className="inline-flex items-center bg-indigo-600 text-white text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-r-full shadow-md">
+                Öne Çıkan
+              </span>
+            )}
+            {product.discountPercent && (
+              <span className="inline-flex items-center bg-rose-500 text-white text-[10px] font-bold px-3 py-1 rounded-r-full shadow-md">
+                %{product.discountPercent} İndirim
+              </span>
+            )}
+          </div>
         </div>
 
         {/* Content */}
@@ -69,9 +77,16 @@ export default function ProductCard({ product, index = 0 }: ProductCardProps) {
           {/* Price + CTA */}
           <div className="flex items-center justify-between pt-2 border-t border-slate-100 mt-1">
             {product.price ? (
-              <span className="text-[20px] font-bold text-indigo-600 leading-none">
-                {product.price}
-              </span>
+              <div className="flex flex-col gap-0.5">
+                <span className="text-[20px] font-bold text-indigo-600 leading-none">
+                  {product.price}
+                </span>
+                {product.originalPrice && (
+                  <span className="text-[13px] text-slate-400 line-through leading-none">
+                    {product.originalPrice}
+                  </span>
+                )}
+              </div>
             ) : (
               <span />
             )}
