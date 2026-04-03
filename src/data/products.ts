@@ -140,6 +140,7 @@ export const products: Product[] = [
       "Ozonlanmış yağ ve kolajen ile zenginleştirilen Ozone & Collagen Oil Serum, cildin daha esnek, dolgun ve canlı görünmesine yardımcı olur. Hafif yapılı yağ-serum formu sayesinde cilde kolayca yayılır, hızla emilir ve yağlı bir his bırakmaz. Düzenli kullanımda cildin daha pürüzsüz görünmesini desteklerken, nem kaybına karşı cilt bariyerinin korunmasına yardımcı olur. Sabah ve akşam bakım rutininize kolayca ekleyebileceğiniz bu serum, tüm cilt tipleri için uygundur.",
     images: [
       "/images/products/ozone-collagen-serum-1.jpg",
+      "/images/products/Gemini_Generated_Image_j7j51kj7j51kj7j5.png",
     ],
     specs: [
       { label: "Hacim", value: "30 ml" },
@@ -164,6 +165,8 @@ export const products: Product[] = [
       "Ozonlanmış yağ ve meyan kökü (Licorice) özü ile zenginleştirilen Ozone & Licorice Oil Serum, cildin daha aydınlık, canlı ve nemli görünmesine yardımcı olur. Hafif ve hızlı emilen yağ-serum dokusu sayesinde cildi ağırlaştırmadan besler. Düzenli kullanımda cilt tonunun daha eşit görünmesini destekler, mat ve yorgun görünümü azaltmaya yardımcı olur. Cildin doğal nem bariyerini destekleyerek daha pürüzsüz ve sağlıklı bir görünüm kazandırır. Tüm cilt tipleri için uygundur.",
     images: [
       "/images/products/ozone-licorice-serum-1.jpg",
+      "/images/products/Gemini_Generated_Image_bxxb8tbxxb8tbxxb.png",
+      "/images/products/Gemini_Generated_Image_vxqd1vvxqd1vvxqd.png",
     ],
     specs: [
       { label: "Hacim", value: "30 ml" },
