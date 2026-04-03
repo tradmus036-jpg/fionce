@@ -2,6 +2,20 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
+import {
+  Droplets,
+  Tag,
+  Leaf,
+  Clock,
+  Building2,
+  Calendar,
+  Package,
+  Layers,
+  Sparkles,
+  Target,
+  BadgePercent,
+  type LucideIcon,
+} from "lucide-react";
 import { getProductBySlug, products } from "@/data/products";
 import ProductGallery from "@/components/product/ProductGallery";
 import Breadcrumbs from "@/components/navigation/Breadcrumbs";
@@ -10,6 +24,23 @@ import Badge from "@/components/ui/Badge";
 interface PageProps {
   params: Promise<{ slug: string }>;
 }
+
+const SPEC_ICONS: Record<string, { icon: LucideIcon; color: string; bg: string }> = {
+  "Hacim":           { icon: Droplets,     color: "text-sky-600",     bg: "bg-sky-50" },
+  "Toplam Hacim":    { icon: Droplets,     color: "text-sky-600",     bg: "bg-sky-50" },
+  "Tip":             { icon: Tag,          color: "text-slate-500",   bg: "bg-slate-100" },
+  "Temel İçerikler": { icon: Leaf,         color: "text-emerald-600", bg: "bg-emerald-50" },
+  "Kullanım":        { icon: Clock,        color: "text-indigo-600",  bg: "bg-indigo-50" },
+  "Üretim":          { icon: Building2,    color: "text-slate-500",   bg: "bg-slate-100" },
+  "SKT":             { icon: Calendar,     color: "text-slate-400",   bg: "bg-slate-100" },
+  "Raf Ömrü":        { icon: Clock,        color: "text-slate-400",   bg: "bg-slate-100" },
+  "Format":          { icon: Package,      color: "text-violet-600",  bg: "bg-violet-50" },
+  "Seri":            { icon: Layers,       color: "text-indigo-600",  bg: "bg-indigo-50" },
+  "Cilt Tipi":       { icon: Sparkles,     color: "text-violet-600",  bg: "bg-violet-50" },
+  "Kullanım Alanı":  { icon: Target,       color: "text-rose-600",    bg: "bg-rose-50" },
+  "Set İçeriği":     { icon: Package,      color: "text-violet-600",  bg: "bg-violet-50" },
+  "Tasarruf":        { icon: BadgePercent, color: "text-rose-600",    bg: "bg-rose-50" },
+};
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { slug } = await params;
@@ -41,6 +72,13 @@ export default async function ProductDetailPage({ params }: PageProps) {
   if (!product) {
     notFound();
   }
+
+  const ingredientSpec = product.specs.find((s) => s.label === "Temel İçerikler");
+  const ingredients = ingredientSpec
+    ? ingredientSpec.value.split(",").map((i) => i.trim()).filter(Boolean)
+    : [];
+
+  const otherSpecs = product.specs.filter((s) => s.label !== "Temel İçerikler");
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
@@ -82,6 +120,27 @@ export default async function ProductDetailPage({ params }: PageProps) {
           </div>
 
           <p className="text-slate-600 leading-relaxed">{product.longDesc}</p>
+
+          {/* Ingredient chips */}
+          {ingredients.length > 0 && (
+            <div>
+              <div className="flex items-center gap-2 mb-3">
+                <Leaf className="w-4 h-4 text-emerald-600" />
+                <span className="text-sm font-semibold text-slate-700">Temel İçerikler</span>
+              </div>
+              <div className="flex flex-wrap gap-2">
+                {ingredients.map((ingredient) => (
+                  <span
+                    key={ingredient}
+                    className="inline-flex items-center gap-1.5 bg-emerald-50 border border-emerald-100 text-emerald-700 text-xs font-medium px-3 py-1.5 rounded-full"
+                  >
+                    <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 flex-shrink-0" />
+                    {ingredient}
+                  </span>
+                ))}
+              </div>
+            </div>
+          )}
 
           {/* CTA */}
           {(product.hepsiburadaLink || product.trendyolLink) && (
@@ -163,24 +222,32 @@ export default async function ProductDetailPage({ params }: PageProps) {
           )}
 
           {/* Specs Table */}
-          {product.specs.length > 0 && (
-            <div className="border border-slate-200 rounded-2xl overflow-hidden mt-2">
+          {otherSpecs.length > 0 && (
+            <div className="border border-slate-200 rounded-2xl overflow-hidden">
               <div className="bg-slate-50 px-5 py-3 border-b border-slate-200">
                 <h2 className="font-semibold text-slate-800 text-sm">Teknik Özellikler</h2>
               </div>
               <div className="divide-y divide-slate-100">
-                {product.specs.map((spec) => (
-                  <div key={spec.label} className="flex px-5 py-3">
-                    <span className="w-2/5 text-sm text-slate-500 font-medium">{spec.label}</span>
-                    <span className="w-3/5 text-sm text-slate-800">{spec.value}</span>
-                  </div>
-                ))}
+                {otherSpecs.map((spec) => {
+                  const specMeta = SPEC_ICONS[spec.label];
+                  const Icon = specMeta?.icon;
+                  return (
+                    <div key={spec.label} className="flex items-start px-5 py-3 gap-3">
+                      {Icon && (
+                        <span className={`mt-0.5 flex-shrink-0 w-6 h-6 rounded-md flex items-center justify-center ${specMeta.bg}`}>
+                          <Icon className={`w-3.5 h-3.5 ${specMeta.color}`} />
+                        </span>
+                      )}
+                      <span className="w-2/5 text-sm text-slate-500 font-medium pt-0.5">{spec.label}</span>
+                      <span className="flex-1 text-sm text-slate-800 pt-0.5">{spec.value}</span>
+                    </div>
+                  );
+                })}
               </div>
             </div>
           )}
         </div>
       </div>
-
     </div>
   );
 }
