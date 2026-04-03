@@ -246,7 +246,9 @@ export const products: Product[] = [
   },
 ];
 
-export const activeProducts = products.filter((p) => !p.isArchived);
+export const activeProducts = products
+  .filter((p) => !p.isArchived)
+  .sort((a, b) => (b.isBundle ? 1 : 0) - (a.isBundle ? 1 : 0));
 
 export function getProductBySlug(slug: string): Product | undefined {
   return products.find((p) => p.slug === slug);
