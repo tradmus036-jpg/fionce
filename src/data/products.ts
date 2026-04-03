@@ -193,6 +193,7 @@ export const products: Product[] = [
     originalPrice: "₺499",
     discountPercent: 20,
     images: [
+      "/images/products/care-well-serum-ikili-set.png",
       "/images/products/ozone-collagen-serum-1.jpg",
       "/images/products/ozone-licorice-serum-1.jpg",
     ],
@@ -223,6 +224,7 @@ export const products: Product[] = [
     originalPrice: "₺769",
     discountPercent: 15,
     images: [
+      "/images/products/komple-cilt-bakim-seti.png",
       "/images/products/arnica-viola-cream-1.jpg",
       "/images/products/repair-cream-1.jpg",
       "/images/products/ozone-collagen-serum-1.jpg",
