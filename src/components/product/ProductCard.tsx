@@ -28,7 +28,7 @@ export default function ProductCard({ product, index = 0 }: ProductCardProps) {
             src={product.images[0]}
             alt={product.name}
             fill
-            className="object-cover group-hover:scale-[1.04] transition-transform duration-[300ms] ease-out"
+            className="object-contain group-hover:scale-[1.04] transition-transform duration-[300ms] ease-out"
             placeholder="blur"
             blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAAIAAoDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABgUE/8QAIhAAAQMEAgMAAAAAAAAAAAAAAQIDBAAFERIhMUH/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8AoOj9Tt7RaGJ0WC2h9Lim1LSVqSFbJA2TjA9q6SFfLrqEi4tGVIjMOFt5haQCUrwCCD6g13RRQB//2Q=="
             sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"

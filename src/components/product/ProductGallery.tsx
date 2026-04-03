@@ -23,7 +23,7 @@ export default function ProductGallery({ images, productName }: ProductGalleryPr
           src={images[activeIndex]}
           alt={`${productName} - Görsel ${activeIndex + 1}`}
           fill
-          className="object-cover transition-all duration-500"
+          className="object-contain transition-all duration-500"
           placeholder="blur"
           blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAAIAAoDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABgUE/8QAIhAAAQMEAgMAAAAAAAAAAAAAAQIDBAAFERIhMUH/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8AoOj9Tt7RaGJ0WC2h9Lim1LSVqSFbJA2TjA9q6SFfLrqEi4tGVIjMOFt5haQCUrwCCD6g13RRQB//2Q=="
           sizes="(max-width: 768px) 100vw, 50vw"
@@ -82,7 +82,7 @@ export default function ProductGallery({ images, productName }: ProductGalleryPr
                 src={img}
                 alt={`${productName} küçük resim ${i + 1}`}
                 fill
-                className="object-cover"
+                className="object-contain"
                 sizes="100px"
               />
             </button>

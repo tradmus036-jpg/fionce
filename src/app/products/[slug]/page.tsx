@@ -204,7 +204,7 @@ export default async function ProductDetailPage({ params }: PageProps) {
                           src={item.images[0]}
                           alt={item.name}
                           fill
-                          className="object-cover"
+                          className="object-contain"
                           sizes="56px"
                         />
                       </div>
