@@ -49,7 +49,7 @@ export default function AboutPage() {
           <span className="text-indigo-600">Buluşma Noktası</span>
         </h1>
         <p className="text-xl text-slate-500 leading-relaxed max-w-2xl">
-          FiONCÉ, 30 yılı aşkın dermokozmetik deneyimine sahip FARMAPLUS KOZMETİK tarafından geliştirilen bir beauty &amp; healthy markasıdır. Türkiye'nin kalbinde üretilen ürünlerimizle saçınıza, cildinize ve vücudunuza gerçek anlamda bakım sunuyoruz.
+          FiONCÉ, 30 yılı aşkın dermokozmetik deneyimine sahip FARMAPLUS KOZMETİK tarafından geliştirilen bir Kişisel Bakım markasıdır. Türkiye'nin kalbinde üretilen ürünlerimizle saçınıza, cildinize ve vücudunuza gerçek anlamda bakım sunuyoruz.
         </p>
       </div>
 
