@@ -248,7 +248,11 @@ export const products: Product[] = [
 
 export const activeProducts = products
   .filter((p) => !p.isArchived)
-  .sort((a, b) => (b.isBundle ? 1 : 0) - (a.isBundle ? 1 : 0));
+  .sort((a, b) => {
+    if (a.id === "2") return -1;
+    if (b.id === "2") return 1;
+    return (b.isBundle ? 1 : 0) - (a.isBundle ? 1 : 0);
+  });
 
 export function getProductBySlug(slug: string): Product | undefined {
   return products.find((p) => p.slug === slug);
