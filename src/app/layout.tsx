@@ -33,7 +33,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="tr" className={`h-full ${inter.variable} ${playfair.variable}`}>
-      <body className="min-h-full flex flex-col bg-white text-slate-900 antialiased">
+      <body className="min-h-full flex flex-col text-slate-900 antialiased" style={{ backgroundColor: "var(--background)" }}>
         <Navbar />
         <main className="flex-1">{children}</main>
         <Footer />

@@ -25,11 +25,11 @@
 :root {
   --primary: #4f46e5;
   --primary-hover: #4338ca;
-  --background: #ffffff;
+  --background: #F8F5F1;
   --foreground: #0f172a;
   --muted: #64748b;
-  --muted-bg: #f8fafc;
-  --card: #fafafa;
+  --muted-bg: #F2EEE9;
+  --card: #ffffff;
   --border: #e2e8f0;
   --ring: #4f46e5;
 
