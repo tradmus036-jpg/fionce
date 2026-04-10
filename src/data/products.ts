@@ -51,6 +51,7 @@ export const products: Product[] = [
       { label: "Üretim", value: "Made in Türkiye – FARMAPLUS KOZMETİK" },
       { label: "SKT", value: "04.2028 (ÜRT: 04.2025)" },
     ],
+    price: "₺699",
     externalLink: "https://www.farmapluskozmetik.com",
     hepsiburadaLink: "https://www.hepsiburada.com",
     trendyolLink: "https://www.trendyol.com",
