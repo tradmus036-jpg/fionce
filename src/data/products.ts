@@ -33,9 +33,9 @@ export const products: Product[] = [
     slug: "kepekli-saclar-sac-bakim-sampuani",
     name: "FiONCÉ Kepekli Saçlar Saç Bakım Şampuanı",
     category: "Saç Bakımı",
-    shortDesc: "Ardıç Katranı, Salicylic Acid ve Collagen ile kepek sorununa köklü çözüm. 250ml.",
+    shortDesc: "Ardıç Katranı, Salicylic Acid ve Collagen ile kepek sorununa köklü çözüm. Sülfat Free · Paraben Free. 250ml.",
     longDesc:
-      "Ardıç katranı, saç derisinin temizlenmesine ve kepek oluşumunu engellemeye yardımcı olan doğal bir içeriktir. Collagen saç tellerini güçlendirir ve saçların elastikiyetini artırır; böylece kırılma ve dökülme riskini azaltır. Trichogen ve Ozon kombinasyonu saç köklerini besleyerek saç derisinde sağlıklı bir ortam oluşturur. Salicylic Acid, saç derisini ölü hücrelerden arındırır ve kepek oluşumunu önler. Panthenol saç tellerini nemlendirir, saçların yumuşak ve parlak olmasını sağlar. Çay ağacı yağı saç derisindeki mikropları temizler; Ginseng ve Biotin saç köklerini canlandırır. Saçlarınıza sağlık ve ışıltı katın.",
+      "Ardıç katranı, saç derisinin temizlenmesine ve kepek oluşumunu engellemeye yardımcı olan etkili bir içeriktir. Collagen saç tellerini güçlendirir ve saçların elastikiyetini artırır; böylece kırılma ve dökülme riskini azaltır. Trichogen ve Ozon kombinasyonu saç köklerini besleyerek saç derisinde sağlıklı bir ortam oluşturur. Salicylic Acid, saç derisini ölü hücrelerden arındırır ve kepek oluşumunu önler. Panthenol saç tellerini nemlendirir, saçların yumuşak ve parlak olmasını sağlar. Çay ağacı yağı saç derisindeki mikropları temizler; Ginseng ve Biotin saç köklerini canlandırır. Sülfat ve paraben içermez. Saçlarınıza sağlık ve ışıltı katın.",
     images: [
       "/images/products/kepekli-saclar-main.png",
       "/images/products/kepekli-saclar-foto2.png",
@@ -45,6 +45,7 @@ export const products: Product[] = [
     specs: [
       { label: "Hacim", value: "250 ml · 8.45 fl.oz." },
       { label: "Tip", value: "Kepek Karşıtı · Anti-Dandruff" },
+      { label: "Formül", value: "Sülfat Free · Paraben Free" },
       { label: "Temel İçerikler", value: "Ardıç Katranı, Collagen, Salicylic Acid, Panthenol, Çay Ağacı Yağı, Ginseng, Biotin" },
       { label: "Kullanım", value: "Günlük kullanıma uygundur. 5 dakika bekletin, durulayın." },
       { label: "Üretim", value: "Made in Türkiye – FARMAPLUS KOZMETİK" },

@@ -14,6 +14,7 @@ import {
   Sparkles,
   Target,
   BadgePercent,
+  ShieldCheck,
   type LucideIcon,
 } from "lucide-react";
 import { getProductBySlug, products } from "@/data/products";
@@ -38,6 +39,7 @@ const SPEC_ICONS: Record<string, { icon: LucideIcon; color: string; bg: string }
   "Seri":            { icon: Layers,       color: "text-indigo-600",  bg: "bg-indigo-50" },
   "Cilt Tipi":       { icon: Sparkles,     color: "text-violet-600",  bg: "bg-violet-50" },
   "Kullanım Alanı":  { icon: Target,       color: "text-rose-600",    bg: "bg-rose-50" },
+  "Formül":          { icon: ShieldCheck,  color: "text-teal-600",    bg: "bg-teal-50" },
   "Set İçeriği":     { icon: Package,      color: "text-violet-600",  bg: "bg-violet-50" },
   "Tasarruf":        { icon: BadgePercent, color: "text-rose-600",    bg: "bg-rose-50" },
 };
