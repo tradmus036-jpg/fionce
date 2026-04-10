@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Mail, MessageSquare, MapPin } from "lucide-react";
+import { Mail, MessageSquare, MapPin, Phone } from "lucide-react";
 import Breadcrumbs from "@/components/navigation/Breadcrumbs";
 
 export const metadata: Metadata = {
@@ -15,6 +15,24 @@ export default function ContactPage() {
       <div className="mt-10 mb-12">
         <h1 className="text-4xl font-bold text-slate-900">İletişim</h1>
         <p className="text-xl text-slate-500 mt-4">Sorularınız için buradayız.</p>
+      </div>
+
+      {/* WhatsApp CTA */}
+      <div className="mb-10">
+        <a
+          href="https://wa.me/905447175085"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center gap-5 bg-green-50 border border-green-200 rounded-2xl px-6 py-5 hover:bg-green-100 transition-colors group"
+        >
+          <div className="p-3 bg-green-500 text-white rounded-xl flex-shrink-0">
+            <Phone className="w-5 h-5" />
+          </div>
+          <div>
+            <div className="text-sm font-semibold text-green-800 mb-0.5">Sipariş &amp; WhatsApp Bilgi Hattı</div>
+            <div className="text-xl font-bold text-green-700 group-hover:text-green-800 transition-colors">+90 544 717 5085</div>
+          </div>
+        </a>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
