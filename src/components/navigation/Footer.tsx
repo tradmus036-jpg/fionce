@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Github, Twitter, Instagram } from "lucide-react";
+import { Github, Twitter, Instagram, Phone } from "lucide-react";
 import Logo from "@/components/navigation/Logo";
 
 const footerLinks = [
@@ -81,6 +81,17 @@ export default function Footer() {
               </li>
               <li>
                 <span className="text-slate-400">info@farmapluskozmetik.com</span>
+              </li>
+              <li>
+                <a
+                  href="https://wa.me/905447175085"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-green-400 hover:text-green-300 transition-colors duration-150"
+                >
+                  <Phone className="w-3.5 h-3.5 flex-shrink-0" />
+                  +90 544 717 5085
+                </a>
               </li>
             </ul>
           </div>

@@ -147,7 +147,7 @@ export default async function ProductDetailPage({ params }: PageProps) {
           {/* CTA */}
           {(product.hepsiburadaLink || product.trendyolLink) && (
             <div className="flex flex-col gap-3 pt-2">
-              <p className="text-sm font-medium text-slate-500">Satın almak için platform seçin:</p>
+              <p className="text-lg font-bold text-slate-800 text-center">Satın almak için</p>
               <div className="flex flex-col sm:flex-row gap-3">
                 {product.hepsiburadaLink && (
                   <a
