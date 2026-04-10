@@ -29,7 +29,7 @@ const navLinks: NavItem[] = [
     label: "Markalarımız",
     dropdown: [
       { href: "/brands#fionc%C3%A9", label: "FiONCÉ", desc: "Beauty & Healthy" },
-      { href: "/brands#farmaplus", label: "FARMAPLUS Kozmetik", desc: "30+ Yıllık Üretim Deneyimi" },
+      { href: "/brands#lifesty", label: "LIFESTY", desc: "Lifestyle & Wellness" },
     ],
   },
   { href: "/about", label: "Hakkımızda" },

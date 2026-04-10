@@ -4,7 +4,7 @@ import Breadcrumbs from "@/components/navigation/Breadcrumbs";
 export const metadata: Metadata = {
   title: "Markalarımız",
   description:
-    "FiONCÉ beauty & healthy çatısı altındaki ürün serilerini ve üretici markamız FARMAPLUS KOZMETİK'i keşfedin.",
+    "FiONCÉ beauty & healthy ve LIFESTY — doğal içerikli bakım ve lifestyle ürünleriyle her ihtiyaca özel çözümler.",
 };
 
 const brands = [
@@ -27,18 +27,17 @@ const brands = [
     ],
   },
   {
-    name: "FARMAPLUS",
-    tagline: "Kozmetik",
+    name: "LIFESTY",
+    tagline: "Lifestyle & Wellness",
     description:
-      "30 yılı aşkın üretim deneyimiyle İstanbul'dan Türkiye'ye ve dünyaya kozmetik kalitesi sunan köklü üretici markamız. FiONCÉ ürünlerinin tamamı FARMAPLUS KOZMETİK tesislerinde üretilmektedir.",
-    color: "from-blue-50 to-blue-100",
-    accent: "bg-blue-700",
-    textAccent: "text-blue-700",
-    borderAccent: "border-blue-200",
+      "Günlük yaşamı güzelleştiren, doğal içerikler ve modern formüller ile hazırlanmış lifestyle & wellness ürün serisi. Sağlıklı ve dengeli bir yaşam tarzı için tasarlanmış; cilt, saç ve vücut bakımını bütüncül bir anlayışla ele alır.",
+    color: "from-teal-50 to-teal-100",
+    accent: "bg-teal-600",
+    textAccent: "text-teal-700",
+    borderAccent: "border-teal-200",
     series: [
-      { name: "Üretim Merkezi", desc: "Made in Türkiye — İstanbul" },
-      { name: "Kalite Güvencesi", desc: "Dermatolojik açıdan test edilmiş, güvenli formüller" },
-      { name: "Deneyim", desc: "30+ yıllık kozmetik üretim altyapısı" },
+      { name: "Wellness Serisi", desc: "Günlük bakım rutini için doğal içerikli ürünler" },
+      { name: "Lifestyle Koleksiyonu", desc: "Modern yaşam tarzına uygun bakım çözümleri" },
     ],
   },
 ];
@@ -52,8 +51,7 @@ export default function BrandsPage() {
         <div className="text-center mb-14">
           <h1 className="text-4xl font-bold text-gray-900 mb-4">Markalarımız</h1>
           <p className="text-lg text-gray-500 max-w-2xl mx-auto">
-            FARMAPLUS KOZMETİK'in 30 yıllık üretim birikimi ve FiONCÉ'nin modern beauty & healthy anlayışıyla
-            her ihtiyaca özel bakım çözümleri sunuyoruz.
+            FiONCÉ beauty & healthy ve LIFESTY — doğal içerikler ve modern formüller ile her ihtiyaca özel bakım ve wellness çözümleri sunuyoruz.
           </p>
         </div>
 
