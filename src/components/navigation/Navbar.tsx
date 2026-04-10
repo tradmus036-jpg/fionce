@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Menu, X, ArrowRight, ChevronDown } from "lucide-react";
 import Logo from "@/components/navigation/Logo";
 
@@ -43,6 +43,16 @@ export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
   const [mobileExpanded, setMobileExpanded] = useState<string | null>(null);
+  const closeTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  const handleDropdownEnter = (href: string) => {
+    if (closeTimer.current) clearTimeout(closeTimer.current);
+    setOpenDropdown(href);
+  };
+
+  const handleDropdownLeave = () => {
+    closeTimer.current = setTimeout(() => setOpenDropdown(null), 150);
+  };
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 12);
@@ -83,8 +93,8 @@ export default function Navbar() {
                 <div
                   key={link.href}
                   className="relative"
-                  onMouseEnter={() => setOpenDropdown(link.href)}
-                  onMouseLeave={() => setOpenDropdown(null)}
+                  onMouseEnter={() => handleDropdownEnter(link.href)}
+                  onMouseLeave={handleDropdownLeave}
                   onClick={(e) => e.stopPropagation()}
                 >
                   <Link
@@ -106,8 +116,13 @@ export default function Navbar() {
                     )}
                   </Link>
 
+                  {/* Invisible bridge to prevent gap between trigger and panel */}
+                  <div className="absolute top-full left-0 w-full h-2" />
+
                   {/* Dropdown Panel */}
                   <div
+                    onMouseEnter={() => handleDropdownEnter(link.href)}
+                    onMouseLeave={handleDropdownLeave}
                     className={`absolute top-full left-0 mt-1 w-56 bg-white rounded-xl shadow-lg border border-slate-100 py-2 transition-all duration-150 ${
                       openDropdown === link.href
                         ? "opacity-100 translate-y-0 pointer-events-auto"
