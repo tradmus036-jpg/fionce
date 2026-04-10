@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 };
 
 const stats = [
-  { value: "30+", label: "Yıllık Deneyim" },
+  { value: "%100", label: "Ar-Ge Süreciyle Ürün Geliştirme" },
   { value: "3", label: "Özgün Marka" },
   { value: "100+", label: "Ürün Formülü" },
   { value: "İstanbul", label: "Üretim Merkezi" },
@@ -19,12 +19,12 @@ const values = [
   {
     icon: Target,
     title: "Misyonumuz",
-    desc: "Doğal içerikler ve ileri teknoloji formüllerle saç, cilt ve vücut sağlığını desteklemek; her ihtiyaca özel, etkili ve güvenli çözümler sunmak.",
+    desc: "Ülkemiz başta olmak üzere tüm dünyada doğal içerikler ve ileri teknoloji formüllerle saç, cilt ve vücut sağlığını desteklemek; her ihtiyaca özel, etkili ve güvenli çözümler sunmak.",
   },
   {
     icon: Eye,
     title: "Vizyonumuz",
-    desc: "Türkiye'nin beauty & healthy alanında en güvenilir ve tercih edilen markası olmak; dermokozmetik kaliteyi her eve taşımak.",
+    desc: "Ülkemiz başta olmak üzere tüm dünyada beauty & healthy alanında en güvenilir ve sektöre değer katan marka olmak.",
   },
   {
     icon: Heart,
