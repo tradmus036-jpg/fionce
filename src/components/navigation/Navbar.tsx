@@ -51,7 +51,7 @@ export default function Navbar() {
   };
 
   const handleDropdownLeave = () => {
-    closeTimer.current = setTimeout(() => setOpenDropdown(null), 150);
+    closeTimer.current = setTimeout(() => setOpenDropdown(null), 300);
   };
 
   useEffect(() => {
@@ -116,17 +116,19 @@ export default function Navbar() {
                     )}
                   </Link>
 
-                  {/* Invisible bridge to prevent gap between trigger and panel */}
-                  <div className="absolute top-full left-0 w-full h-2" />
-
-                  {/* Dropdown Panel */}
+                  {/* Dropdown wrapper — starts at top-full with zero gap so mouseleave never fires mid-travel */}
                   <div
+                    className={`absolute top-full left-0 w-56 pt-1.5 ${
+                      openDropdown === link.href ? "pointer-events-auto" : "pointer-events-none"
+                    }`}
                     onMouseEnter={() => handleDropdownEnter(link.href)}
                     onMouseLeave={handleDropdownLeave}
-                    className={`absolute top-full left-0 mt-1 w-56 bg-white rounded-xl shadow-lg border border-slate-100 py-2 transition-all duration-150 ${
+                  >
+                  <div
+                    className={`bg-white rounded-xl shadow-lg border border-slate-100 py-2 transition-all duration-150 ${
                       openDropdown === link.href
-                        ? "opacity-100 translate-y-0 pointer-events-auto"
-                        : "opacity-0 -translate-y-1 pointer-events-none"
+                        ? "opacity-100 translate-y-0"
+                        : "opacity-0 -translate-y-1"
                     }`}
                   >
                     {link.dropdown.map((item) => (
@@ -144,6 +146,7 @@ export default function Navbar() {
                         )}
                       </Link>
                     ))}
+                  </div>
                   </div>
                 </div>
               ) : (
