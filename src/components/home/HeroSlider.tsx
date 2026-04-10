@@ -49,7 +49,7 @@ export default function HeroSlider({ slides }: HeroSliderProps) {
         >
           {/* Background image */}
           <Image
-            src={slide.images[0]}
+            src={slide.heroImage ?? slide.images[0]}
             alt={slide.name}
             fill
             className="object-cover object-center"

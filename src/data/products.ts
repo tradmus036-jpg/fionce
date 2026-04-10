@@ -37,7 +37,7 @@ export const products: Product[] = [
     longDesc:
       "Ardıç katranı, saç derisinin temizlenmesine ve kepek oluşumunu engellemeye yardımcı olan etkili bir içeriktir. Collagen saç tellerini güçlendirir ve saçların elastikiyetini artırır; böylece kırılma ve dökülme riskini azaltır. Trichogen ve Ozon kombinasyonu saç köklerini besleyerek saç derisinde sağlıklı bir ortam oluşturur. Salicylic Acid, saç derisini ölü hücrelerden arındırır ve kepek oluşumunu önler. Panthenol saç tellerini nemlendirir, saçların yumuşak ve parlak olmasını sağlar. Çay ağacı yağı saç derisindeki mikropları temizler; Ginseng ve Biotin saç köklerini canlandırır. Sülfat ve paraben içermez. Saçlarınıza sağlık ve ışıltı katın.",
     images: [
-      "/images/products/kepekli-saclar-main.png",
+      "/images/products/kadin1.png",
       "/images/products/kepekli-saclar-foto2.png",
       "/images/products/kepekli-saclar-1.jpg",
       "/images/products/kepekli-saclar-2.jpg",
@@ -52,6 +52,7 @@ export const products: Product[] = [
       { label: "SKT", value: "04.2028 (ÜRT: 04.2025)" },
     ],
     price: "₺699",
+    heroImage: "/images/products/kadin2.png",
     externalLink: "https://www.farmapluskozmetik.com",
     hepsiburadaLink: "https://www.hepsiburada.com",
     trendyolLink: "https://www.trendyol.com",

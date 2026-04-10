@@ -14,6 +14,7 @@ export interface Product {
   originalPrice?: string;
   discountPercent?: number;
   images: string[];
+  heroImage?: string;
   specs: ProductSpec[];
   externalLink: string;
   hepsiburadaLink?: string;
