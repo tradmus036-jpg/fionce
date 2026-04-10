@@ -44,10 +44,12 @@ export default function AboutPage() {
           <span className="w-2 h-2 rounded-full bg-indigo-600" />
           FiONCÉ beauty &amp; healthy
         </span>
-        <h1 className="text-4xl sm:text-5xl font-bold text-slate-900 leading-tight mb-5">
-          Bilim ve Doğanın<br />
-          <span className="text-indigo-600">Buluşma Noktası</span>
+        <h1 className="text-4xl sm:text-5xl font-bold text-slate-900 leading-tight mb-3">
+          Neden FiONCÉ?
         </h1>
+        <p className="text-xl font-semibold text-indigo-600 mb-5">
+          Bilim ve Doğanın Buluşma Noktası
+        </p>
         <p className="text-xl text-slate-500 leading-relaxed max-w-2xl">
           FiONCÉ, 30 yılı aşkın dermokozmetik deneyimine sahip FARMAPLUS KOZMETİK tarafından geliştirilen bir Kişisel Bakım markasıdır. Türkiye'nin kalbinde üretilen ürünlerimizle saçınıza, cildinize ve vücudunuza gerçek anlamda bakım sunuyoruz.
         </p>
@@ -110,7 +112,6 @@ export default function AboutPage() {
 
       {/* Why FiONCÉ */}
       <div>
-        <h2 className="text-2xl font-bold text-slate-900 mb-4">Neden FiONCÉ?</h2>
         <p className="text-slate-600 leading-relaxed mb-4">
           FiONCÉ ürünleri; Biotin, Keratin, Collagen, Ozon Yağı ve onlarca bitkisel özü bir araya getiren özel formülasyonlarla hazırlanır. Her ürün, saç derisinin, cildin ve vücudun farklı ihtiyaçlarına özel geliştirilmiş olup günlük kullanıma uygundur.
         </p>
