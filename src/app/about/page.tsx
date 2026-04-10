@@ -81,14 +81,11 @@ export default function AboutPage() {
 
       {/* About FARMAPLUS */}
       <div className="bg-slate-50 border border-slate-200 rounded-3xl p-8 md:p-10 mb-16">
-        <h2 className="text-2xl font-bold text-slate-900 mb-6">Üreticimiz: FARMAPLUS KOZMETİK</h2>
+        <h2 className="text-2xl font-bold text-slate-900 mb-6">FARMAPLUS KOZMETİK</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="space-y-4 text-slate-600 leading-relaxed text-sm">
             <p>
-              <strong className="text-slate-800">FARMAPLUS KOZMETİK İLAÇ SAN. VE TİC. LTD. ŞTİ.</strong>, 30 yılı aşkın sektör deneyimiyle kozmetik ve dermokozmetik ürün üretiminde uzmanlaşmış bir Türk firmasıdır.
-            </p>
-            <p>
-              Modern üretim tesisleri ve uzman Ar-Ge kadrosuyla; saç bakımı, cilt bakımı, vücut bakımı ve güneş koruma ürünleri başta olmak üzere geniş bir ürün yelpazesinde özel formülasyon ve üretim hizmeti sunmaktadır.
+              Saç bakımı, cilt bakımı, vücut bakımı ve güneş koruma ürünleri başta olmak üzere geniş bir ürün yelpazesinde özel formülasyon ve üretim hizmeti sunmaktayız.
             </p>
             <p>
               FARMAPLUS bünyesinde geliştirilen <strong className="text-slate-800">FiONCÉ</strong>, <strong className="text-slate-800">SNOWO3</strong> ve <strong className="text-slate-800">DIBUAL</strong> markaları, şirketin dermokozmetik uzmanlığını tüketiciye doğrudan yansıtan özgün markalardır.
