@@ -113,10 +113,10 @@ export default function AboutPage() {
       {/* Why FiONCÉ */}
       <div>
         <p className="text-slate-600 leading-relaxed mb-4">
-          FiONCÉ ürünleri; Biotin, Keratin, Collagen, Ozon Yağı ve onlarca bitkisel özü bir araya getiren özel formülasyonlarla hazırlanır. Her ürün, saç derisinin, cildin ve vücudun farklı ihtiyaçlarına özel geliştirilmiş olup günlük kullanıma uygundur.
+          FiONCÉ markası; Biotin, Keratin, Collagen, Ozon Yağı ve onlarca bitkisel özü bir araya getiren özel formülasyonlarla hazırlanır. Her ürün, saç derisinin, cildin ve vücudun farklı ihtiyaçlarına özel geliştirilmiş olup günlük kullanıma uygundur.
         </p>
         <p className="text-slate-600 leading-relaxed">
-          Dökülme karşıtı ve kepek karşıtı şampuanlarımızdan cilt nemlendirici kremlerimize, masaj serumumuzdan yağ serumlarımıza kadar tüm ürünlerimiz; <strong className="text-slate-800">Made in Türkiye</strong> kalitesiyle, güvenli ve etkili formüllerle üretilmektedir.
+          Şampuanlarımızdan cilt nemlendirici kremlerimize, masaj serumumuzdan yağ bazlı serumlarımıza kadar tüm ürünlerimiz; kendi üretim tesislerimizde, güvenli ve etkili formüllerle üretilmektedir.
         </p>
       </div>
     </div>
