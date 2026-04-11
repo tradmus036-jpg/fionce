@@ -140,7 +140,7 @@ export const products: Product[] = [
     category: "Cilt Bakımı",
     shortDesc: "Ozonlanmış yağ ve kolajenin gücüyle cildin esnekliğini ve nem dengesini destekleyen yağ-serum. 30ml.",
     longDesc:
-      "Ozonlanmış yağ ve kolajen ile zenginleştirilen Ozone & Collagen Oil Serum, cildin daha esnek, dolgun ve canlı görünmesine yardımcı olur. Hafif yapılı yağ-serum formu sayesinde cilde kolayca yayılır, hızla emilir ve yağlı bir his bırakmaz. Düzenli kullanımda cildin daha pürüzsüz görünmesini desteklerken, nem kaybına karşı cilt bariyerinin korunmasına yardımcı olur. Sabah ve akşam bakım rutininize kolayca ekleyebileceğiniz bu serum, tüm cilt tipleri için uygundur.",
+      "Zamanı Cildinizde Yavaşlatın. Cildinizin ihtiyacı olan esneklik, nem ve canlılık artık tek bir damlada… Ozone & Collagen Oil Serum, ozonun yenileyici gücü ile kolajenin sıkılaştırıcı etkisini bir araya getirerek cildinize genç ve sağlıklı bir görünümü destekler.\n\nYoğun Nem & Dolgun Görünüm: Cildi derinlemesine yardımcıdır, kuruluk kaynaklı ince görünümü azaltmaya destek verir.\n\nEsneklik & Sıkılık Desteği: Kolajen desteği ile cildin daha elastik ve pürüzsüz görünmesine katkı sağlar.\n\nYenileyici Ozon Dokunuşu: Cildi canlandırır, daha sağlıklı ve taze bir görünüm kazandırmaya yardımcı olur.\n\nİpeksi Doku, Hızlı Emilim: Ağırlık yapmadan hızla emilir, gün boyu konfor sunmaya destek verir.\n\nDaha esnek, daha dolgun, daha genç bir cilt… Her damlada bakım, her kullanımda fark.",
     images: [
       "/images/products/ozone-collagen-serum-1.jpg",
       "/images/products/Gemini_Generated_Image_j7j51kj7j51kj7j5.png",

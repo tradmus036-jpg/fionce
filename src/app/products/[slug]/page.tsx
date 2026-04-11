@@ -121,7 +121,11 @@ export default async function ProductDetailPage({ params }: PageProps) {
             )}
           </div>
 
-          <p className="text-slate-600 leading-relaxed">{product.longDesc}</p>
+          <div className="space-y-3">
+            {product.longDesc.split("\n\n").map((para, i) => (
+              <p key={i} className="text-slate-600 leading-relaxed">{para}</p>
+            ))}
+          </div>
 
           {/* Ingredient chips */}
           {ingredients.length > 0 && (
