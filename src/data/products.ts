@@ -222,7 +222,7 @@ export const products: Product[] = [
     category: "Cilt Bakımı",
     shortDesc: "Arnica & Viola Cream + Regeneration Repair Cream + Ozone & Collagen Serum – eksiksiz günlük cilt rutini. %15 indirimli.",
     longDesc:
-      "FiONCÉ Komple Cilt Bakım Seti, güne başlamaktan geceye kadar cildinize ihtiyaç duyduğu her şeyi tek pakette sunar. Arnica & Viola Cream, cildi besleyerek gün boyu nem ve parlaklık sağlar. Ozone & Collagen Oil Serum, hafif yağ-serum dokusuyla cilt elastikiyetini ve nem dengesini destekler. Regeneration Moisturizing Repair Cream ise gece boyunca derin nemlendirme ve onarım sağlayarak cilt bariyerini güçlendirir. Üç ürün birlikte kullanıldığında cildinizin daha pürüzsüz, canlı ve sağlıklı görünmesini destekler.",
+      "FiONCÉ Komple Cilt Bakım Seti, güne başlamaktan geceye kadar cildinize ihtiyaç duyduğu her şeyi tek pakette sunmayı hedefliyor. Arnica & Viola Cream, cildi besleyerek gün boyu nem ve parlaklık sağlamaya yardım eder. Ozone & Collagen Oil Serum, hafif yağ-serum dokusuyla cilt elastikiyetini ve nem dengesini destekler. Regeneration Moisturizing Repair Cream ise gece boyunca derin nemlendirme ve onarım sağlamaya yardımcı olarak cilt bariyerini güçlenmesi için destek sağlar. Böylece ürünler birlikte kullanıldığında cildinizin daha pürüzsüz, canlı ve sağlıklı görünmesini desteklemektedir.",
     price: "₺649",
     originalPrice: "₺769",
     discountPercent: 15,
