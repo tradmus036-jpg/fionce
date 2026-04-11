@@ -34,7 +34,7 @@ const SPEC_ICONS: Record<string, { icon: LucideIcon; color: string; bg: string }
   "Kullanım":        { icon: Clock,        color: "text-indigo-600",  bg: "bg-indigo-50" },
   "Üretim":          { icon: Building2,    color: "text-slate-500",   bg: "bg-slate-100" },
   "SKT":             { icon: Calendar,     color: "text-slate-400",   bg: "bg-slate-100" },
-  "Raf Ömrü":        { icon: Clock,        color: "text-slate-400",   bg: "bg-slate-100" },
+  "Açıldıktan Sonra Kullanım Süresi": { icon: Clock, color: "text-slate-400", bg: "bg-slate-100" },
   "Format":          { icon: Package,      color: "text-violet-600",  bg: "bg-violet-50" },
   "Seri":            { icon: Layers,       color: "text-indigo-600",  bg: "bg-indigo-50" },
   "Cilt Tipi":       { icon: Sparkles,     color: "text-violet-600",  bg: "bg-violet-50" },
