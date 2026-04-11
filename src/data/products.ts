@@ -165,7 +165,7 @@ export const products: Product[] = [
     category: "Cilt Bakımı",
     shortDesc: "Ozonlanmış yağ ve meyan kökü özüyle cildin daha parlak ve nemli görünmesini destekleyen yağ-serum. 30ml.",
     longDesc:
-      "Ozonlanmış yağ ve meyan kökü (Licorice) özü ile zenginleştirilen Ozone & Licorice Oil Serum, cildin daha aydınlık, canlı ve nemli görünmesine yardımcı olur. Hafif ve hızlı emilen yağ-serum dokusu sayesinde cildi ağırlaştırmadan besler. Düzenli kullanımda cilt tonunun daha eşit görünmesini destekler, mat ve yorgun görünümü azaltmaya yardımcı olur. Cildin doğal nem bariyerini destekleyerek daha pürüzsüz ve sağlıklı bir görünüm kazandırır. Tüm cilt tipleri için uygundur.",
+      "Işıltının Yeni Sırrı: Ozone & Licorice Oil Serum. Cildinize doğadan gelen saf bir dokunuş… Ozonun yenileyici gücü ve meyan kökünün aydınlatıcı etkisi şimdi tek bir damlada buluşuyor.\n\nDerinlemesine Cilt Desteği & Nemlendirme: Cildinizin ihtiyacı olan nemi hapsederek, gün boyu yumuşak ve dolgun bir görünüm sağlamaya yardımcı olur.\n\nCilt Tonunu Aydınlatma: Meyan kökü özü ile mat ve yorgun görünümü azaltmaya yardım ederek, daha parlak ve canlı bir cilt sunmaya destek sağlar.\n\nYenileyici Ozon Etkisi: Cildi arındırmaya ve daha sağlıklı bir görünüm kazandırmaya yardımcı olur.\n\nHafif & Hızlı Emilim: Yağlı his bırakmadan hızla emilir, tüm cilt tipleri için uygundur.\n\nHer damlasında bakım, her kullanımda fark! Cildinizin doğal ışıltısını ortaya çıkarın… Care Well Series – Ozone & Licorice Oil Serum ile tanışın.",
     images: [
       "/images/products/ozone-licorice-serum-1.jpg",
       "/images/products/Gemini_Generated_Image_bxxb8tbxxb8tbxxb.png",
