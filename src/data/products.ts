@@ -191,7 +191,7 @@ export const products: Product[] = [
     category: "Cilt Bakımı",
     shortDesc: "Care Well Series'in iki güçlü ozon serumu bir arada: Ozone & Collagen + Ozone & Licorice Oil Serum. 2×30ml.",
     longDesc:
-      "FiONCÉ Care Well Serum İkili Set, aynı serinin birbirini tamamlayan iki formülünü bir araya getirir. Ozone & Collagen Oil Serum, cildin esnekliğini ve nem dengesini desteklerken; Ozone & Licorice Oil Serum, cilt tonunu eşitleyerek daha aydınlık ve canlı bir görünüm kazandırır. Her ikisi de ozonlanmış yağ bazlı hafif formülleriyle hızlı emilir, yağlı his bırakmaz. Sabah ve akşam rutinine kolayca eklenen bu ikili, cildinize kapsamlı bir bakım deneyimi sunar.",
+      "FiONCÉ Care Well Serum İkili Set, aynı serinin birbirini tamamlayan iki formülünü bir araya getirmektedir. Ozone & Collagen Oil Serum, cildin esnekliğini ve nem dengesini desteklerken; Ozone & Licorice Oil Serum, cilt tonunu eşitlemeye yardımcı olarak daha aydınlık ve canlı bir görünüm için destekler. Her ikisi de ozonlanmış yağ bazlı hafif formülleriyle hızlı emilir, yağlı his bırakmaz. Sabah ve akşam rutinine kolayca eklenebilecek bu ikili, cildinize kapsamlı bir bakım deneyimi sunmaya adaydır.",
     price: "₺399",
     originalPrice: "₺499",
     discountPercent: 20,
