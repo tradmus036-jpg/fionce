@@ -84,29 +84,39 @@ export default function AboutPage() {
       {/* About FARMAPLUS */}
       <div className="bg-slate-50 border border-slate-200 rounded-3xl p-8 md:p-10 mb-16">
         <h2 className="text-2xl font-bold text-slate-900 mb-6">FARMAPLUS KOZMETİK</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div className="space-y-4 text-slate-600 leading-relaxed text-sm">
-            <p>
-              Saç bakımı, cilt bakımı, vücut bakımı ve güneş koruma ürünleri başta olmak üzere geniş bir ürün yelpazesinde özel formülasyon ve üretim hizmeti sunmaktayız.
-            </p>
-            <p>
-              FARMAPLUS bünyesinde geliştirilen <strong className="text-slate-800">FiONCÉ</strong>, <strong className="text-slate-800">SNOWO3</strong> ve <strong className="text-slate-800">DIBUAL</strong> markaları, şirketin dermokozmetik uzmanlığını tüketiciye doğrudan yansıtan özgün markalardır.
-            </p>
-          </div>
-          <div className="space-y-4">
-            {[
-              { icon: Award, text: "30+ yıllık dermokozmetik üretim deneyimi" },
-              { icon: FlaskConical, text: "100+ özel geliştirilen ürün formülü" },
-              { icon: MapPin, text: "Yenimahalle Mah. D-100 Karayolu Cad. No:849/1, Büyükçekmece / İstanbul" },
-            ].map(({ icon: Icon, text }) => (
-              <div key={text} className="flex items-start gap-3">
-                <div className="p-2 bg-indigo-100 text-indigo-600 rounded-lg flex-shrink-0 mt-0.5">
-                  <Icon className="w-4 h-4" />
-                </div>
-                <p className="text-sm text-slate-600 leading-relaxed">{text}</p>
+        <div className="space-y-4 text-slate-600 leading-relaxed text-sm mb-8">
+          <p>
+            Farmaplus Kozmetik, kişisel bakım ve dermokozmetik ürün geliştirme alanında uzmanlaşmış, modern ve inovasyon odaklı bir şirkettir. Cilt ve saç için hassasiyet ve bilimsel dürüstlükle tasarlanmış yüksek performanslı formüller sunuyoruz.
+          </p>
+          <p>
+            Ar&amp;Ge temelli olarak her ürünün maksimum etkinlik, güvenli içerikler ve tavizsiz kalite standartlarıyla oluşturulmasını sağlamak temel amacımızdır. Üretimimizde tüm hammaddelerin uluslararası kalite standartlarında kullanılarak üretilmektedir.
+          </p>
+          <p>
+            Geniş bir sahaya yayılan markalarımızın yanında, Private Label marka oluşturmak isteyen veya Start-up olup yeni ürün tasarlamak isteyen müşterilerimize uygun, geniş bir yelpazede özgün formülasyonlar sunuyoruz.
+          </p>
+          <p>
+            Her markanın kimliğini yansıtan ürünler hazırlarken, aynı zamanda tüm üretim süreci boyunca tam teknik destek ve danışmanlık sağlıyoruz.
+          </p>
+          <p>
+            Misyonumuz; hem sektörün hem de son kullanıcıların en yüksek beklentilerini karşılayan yenilikçi, güvenilir ve bilimsel olarak kanıtlanmış ürünler geliştirmektir.
+          </p>
+          <p>
+            Ar&amp;Ge temelli uzmanlığımız, modern üretim yaklaşımı ve müşteri odaklı hizmet anlayışımızla Farmaplus Kozmetik olarak birçok marka için güvenilir ve tercih edilen bir üretim ortağıyız.
+          </p>
+        </div>
+        <div className="flex flex-wrap gap-4">
+          {[
+            { icon: Award, text: "30+ yıllık dermokozmetik üretim deneyimi" },
+            { icon: FlaskConical, text: "100+ özel geliştirilen ürün formülü" },
+            { icon: MapPin, text: "Yenimahalle Mah. D-100 Karayolu Cad. No:849/1, Büyükçekmece / İstanbul" },
+          ].map(({ icon: Icon, text }) => (
+            <div key={text} className="flex items-start gap-3">
+              <div className="p-2 bg-indigo-100 text-indigo-600 rounded-lg flex-shrink-0 mt-0.5">
+                <Icon className="w-4 h-4" />
               </div>
-            ))}
-          </div>
+              <p className="text-sm text-slate-600 leading-relaxed">{text}</p>
+            </div>
+          ))}
         </div>
       </div>
 
